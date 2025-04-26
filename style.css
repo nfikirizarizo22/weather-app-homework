@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.5s;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #weather-card {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    background: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none;
+  }
+  
+  #history {
+    margin-top: 20px;
+  }
+  
+  .history-item {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin: 5px 0;
+  }
+  

@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App Homework</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Nicolas</h1>
+  <h1>🌤 Weather App</h1>
+  <input type="text" id="city-input" placeholder="Enter city name">
+  <button id="search-btn">Search</button>
+  <div id="weather-card">
+    <h2 id="city-name"></h2>
+    <img id="weather-icon" src="" alt="Weather Icon" width="80">
+    <p id="temperature"></p>
+    <p id="wind"></p>
+    <p id="description"></p>
+  </div>
+  <div id="history"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
