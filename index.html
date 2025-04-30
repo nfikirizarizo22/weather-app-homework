@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weather App Homework</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Simple</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🌤 Weather App</h1>
-  <input type="text" id="city-input" placeholder="Enter city name">
-  <button id="search-btn">Search</button>
-  <div id="weather-card">
-    <h2 id="city-name"></h2>
-    <img id="weather-icon" src="" alt="Weather Icon" width="80">
-    <p id="temperature"></p>
-    <p id="wind"></p>
-    <p id="description"></p>
+  <div class="one">
+    <div class="two">
+      <div class="input-container">
+        <input type="text" id="me" placeholder=" " required />
+        <label for="me">Enter city name</label>
+      </div>
+      <button id="us">🔎</button>
+    </div>
+    <div class="three">
+      <img id="pic" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" />
+      <h1 id="temp">22°C</h1>
+      <h2 id="city">City Name</h2>
+      <div class="four">
+        <p id="hum">50% Humidity</p>
+        <p id="wind">15 km/h Wind</p>
+      </div>
+    </div>
   </div>
-  <div id="history"></div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
