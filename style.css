@@ -2,36 +2,36 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1a1f37, #16213e);
+  font-family: 'Roboto', sans-serif;
+  background-color: #f6f9fc;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #333;
 }
 
 .one {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 25px;
-  padding: 40px 30px;
-  width: 340px;
+  background-color: #ffffff;
+  border: 2px solid #e0e7ef;
+  border-radius: 12px;
+  padding: 35px 30px;
+  width: 360px;
   text-align: center;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
 }
 
 .one:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
 .two {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
-  gap: 10px;
+  margin-bottom: 20px;
+  gap: 12px;
 }
 
 .input-container {
@@ -42,17 +42,17 @@ body {
 #me {
   width: 100%;
   padding: 14px 15px;
-  border-radius: 25px;
-  border: none;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  background-color: #fff;
+  color: #333;
   font-size: 15px;
   outline: none;
-  transition: 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 #me:focus {
-  background: rgba(255, 255, 255, 0.2);
+  border-color: #7f5af0;
 }
 
 .input-container label {
@@ -60,66 +60,63 @@ body {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  color: #bbb;
+  color: #777;
   font-size: 14px;
   pointer-events: none;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
+  background-color: white;
+  padding: 0 4px;
 }
 
 #me:focus + label,
 #me:not(:placeholder-shown) + label {
-  top: 5px;
-  left: 14px;
+  top: -8px;
+  left: 12px;
   font-size: 11px;
-  background: rgba(26, 31, 55, 0.9);
-  color: #00ffe7;
-  padding: 0 6px;
-  border-radius: 4px;
+  color: #7f5af0;
 }
 
 #us {
   padding: 12px;
   border: none;
-  background: #00c9a7;
-  border-radius: 50%;
+  background-color: #7f5af0;
+  color: white;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 18px;
-  transition: 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 #us:hover {
-  background: #00a98f;
-  transform: scale(1.1);
+  background-color: #6848d1;
 }
 
 #pic {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  border-radius: 12px;
   margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  border: 2px solid #e0e7ef;
 }
 
 #temp {
-  font-size: 44px;
-  font-weight: bold;
-  margin: 12px 0;
-  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #1f2937;
 }
 
 #city {
-  font-size: 26px;
-  margin: 6px 0;
-  color: #cceeff;
+  font-size: 22px;
+  margin: 5px 0;
+  color: #6b7280;
 }
 
 .four {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
-  font-size: 14px;
-  color: #a0b3c7;
+  font-size: 13px;
+  color: #888;
 }
