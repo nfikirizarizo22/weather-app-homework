@@ -1,8 +1,8 @@
-document.getElementById("us").addEventListener("click", getWeather);
+document.getElementById("search").addEventListener("click", getWeather);
 
 async function getWeather() {
     //async:"It waits for something (API) before it continues.
-    let city = document.getElementById("me").value;
+    let city = document.getElementById("nameofcity").value;
     if (city === "") {
         alert("Type a city name!");
         return null;
@@ -20,7 +20,7 @@ async function getWeather() {
         console.log("This is an error try to fix this");
         return null;
     }
-}
+}   
 async function catchme(data){
     if (!data) return;
     document.getElementById("temp").innerText = data.main.temp;

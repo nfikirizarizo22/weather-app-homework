@@ -39,7 +39,7 @@ body {
   width: 100%;
 }
 
-#me {
+#nameofcity {
   width: 100%;
   padding: 14px 15px;
   border-radius: 8px;
@@ -51,7 +51,7 @@ body {
   transition: border 0.3s ease;
 }
 
-#me:focus {
+#nameofcity:focus {
   border-color: #7f5af0;
 }
 
@@ -68,15 +68,15 @@ body {
   padding: 0 4px;
 }
 
-#me:focus + label,
-#me:not(:placeholder-shown) + label {
+#nameofcity:focus + label,
+#nameofcity:not(:placeholder-shown) + label {
   top: -8px;
   left: 12px;
   font-size: 11px;
   color: #7f5af0;
 }
 
-#us {
+#search {
   padding: 12px;
   border: none;
   background-color: #7f5af0;
@@ -87,7 +87,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-#us:hover {
+#search:hover {
   background-color: #6848d1;
 }
 
